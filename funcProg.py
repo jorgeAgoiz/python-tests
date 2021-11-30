@@ -26,16 +26,37 @@
 # print(list(zip(my_list, another_list)))
 
 # First exercise
-my_list = [5, 4, 3]
+# my_list = [5, 4, 3]
 
-print(list(map(lambda item: item**2, my_list)))
-
-
-a = [(0, 2), (4, 3), (9, 9), (10, -1)]
+# print(list(map(lambda item: item**2, my_list)))
 
 
-def printSecond(item):
-    return item[1]
+# a = [(0, 2), (4, 3), (9, 9), (10, -1)]
 
 
-print(list(map(printSecond, a)))
+# def printSecond(item):
+#     return item[1]
+
+
+# print(list(map(printSecond, a)))
+
+# list comprehension
+
+# my_list_name = [char for char in "hello my name is Jorge"]
+# my_list_two = [num for num in range(0, 100)]
+# my_list_three = [num**2 for num in range(0, 100)]
+# my_list_four = [num**2 for num in range(0, 100) if num % 2 == 0]
+
+# print(my_list_name)
+# print(my_list_two)
+# print(my_list_three)
+# print(my_list_four)
+
+# EXERCISE
+
+some_list = ['a', 'b', 'c', 'b', 'd', 'm', 'n', 'n']
+
+duplicates = set([char for char in some_list if some_list.count(
+    char) > 1])
+
+print(duplicates)
