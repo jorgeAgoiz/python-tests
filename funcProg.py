@@ -54,9 +54,44 @@
 
 # EXERCISE
 
-some_list = ['a', 'b', 'c', 'b', 'd', 'm', 'n', 'n']
+# some_list = ['a', 'b', 'c', 'b', 'd', 'm', 'n', 'n']
 
-duplicates = set([char for char in some_list if some_list.count(
-    char) > 1])
+# duplicates = set([char for char in some_list if some_list.count(
+#     char) > 1])
 
-print(duplicates)
+# print(duplicates)
+
+# DECORATORS
+
+def my_decorator(f):
+    def wrapper_function(*args):
+        print("Calculating...")
+        f(*args)
+        print("Calculated!!")
+    return wrapper_function
+
+
+@my_decorator
+def suma(a, b):
+    return print(a+b)
+
+
+@my_decorator
+def resta(a, b):
+    return print(a-b)
+
+
+@my_decorator
+def multiply(a, b):
+    return print(a*b)
+
+
+@my_decorator
+def division(a, b):
+    return print(a/b)
+
+
+suma(12, 6)
+resta(23, 12)
+multiply(2, 36)
+division(12, 3)
