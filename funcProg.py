@@ -63,35 +63,36 @@
 
 # DECORATORS
 
-def my_decorator(f):
-    def wrapper_function(*args):
-        print("Calculating...")
-        f(*args)
-        print("Calculated!!")
-    return wrapper_function
+# def my_decorator(f):
+#     def wrapper_function(*args):
+#         print("Calculating...")
+#         f(*args)
+#         print("Calculated!!")
+#     return wrapper_function
 
 
-@my_decorator
-def suma(a, b):
-    return print(a+b)
+# @my_decorator
+# def suma(a, b):
+#     return print(a+b)
 
 
-@my_decorator
-def resta(a, b):
-    return print(a-b)
+# @my_decorator
+# def resta(a, b):
+#     return print(a-b)
 
 
-@my_decorator
-def multiply(a, b):
-    return print(a*b)
+# @my_decorator
+# def multiply(a, b):
+#     return print(a*b)
 
 
-@my_decorator
-def division(a, b):
-    return print(a/b)
+# @my_decorator
+# def division(a, b):
+#     return print(a/b)
 
 
-suma(12, 6)
-resta(23, 12)
-multiply(2, 36)
-division(12, 3)
+# suma(12, 6)
+# resta(23, 12)
+# multiply(2, 36)
+# division(12, 3)
+print(__name__)

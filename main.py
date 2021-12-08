@@ -124,3 +124,6 @@
 
 
 # print(highest_even(my_nums))
+import funcProg
+
+print(__name__)

@@ -14,4 +14,4 @@ while adult == False:
     except ValueError:
         print("Please enter a number")
     except ZeroDivisionError:
-        print("please enter age higher than 0")
+        print("Please enter age higher than 0")
